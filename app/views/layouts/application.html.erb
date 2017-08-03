@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BlocItOff</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>BlocItOff</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Sedgwick+Ave" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <body>
-    <%= yield %>
-  </body>
+</head>
+
+<body>
+
+<div class="container">
+  <%= yield %>
+</div>
+
+</body>
 </html>
